@@ -9,18 +9,19 @@ import Link from "next/link"
 const Navbar = () => {
   return ( 
     
-    <div className= 'flex gap-[7rem] m-5 items-center md:gap-6 md:mx-0 lg:gap-6'>
+    <div className= 'flex gap-[6rem] m-5 items-center md:container md:mx-0 lg:gap-6'>
       <div className="flex gap-3 items-center "> 
       <Image src={Logo}
-        width={50}
-        height={50}
-        className="object-contain"
+        alt="Logo"
+        // style={{width: "20px", height: "20px"}}
+        className='w-[25px] h-[25px] 
+        md:w-[25px] md:h-[25px] lg:w-[25px] lg:h-[25px]'
         />
         <h4 className="font-bold font-[900] text-xl" >Opensea</h4>
       </div>
 
       
-      <div className="hidden p-2 rounde-xl items-center gap-2 md:border-4 md:rounded-xl md:flex md:w-[100%] lg:flex">
+      <div className="hidden p-2 rounde-xl items-center gap-2 md:border-4 md:rounded-xl md:flex md:w-[100%] md:shrink-6 lg:flex">
       <AiOutlineSearch color="grey" size={25}/>
         <input type="text"
          name=""
@@ -38,7 +39,7 @@ const Navbar = () => {
         </ul>
       
       
-      <div className='flex gap-6'>
+      <div className='flex gap-5'>
       <AiOutlineSearch className='flex  md:hidden lg:hidden'  color="grey" size={34}/>
       <FiMenu className='flex  md:flex lg:hidden' color='grey' size={34}/>
       <CgProfile  className='hidden md:flex lg:flex' color="grey" size={34}/>
